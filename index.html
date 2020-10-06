@@ -16,6 +16,15 @@
     <title>Login - Tuduu</title>
   </head>
   <body>
+    <!-- Danger Message -->
+    <div class="container">
+      <div class="card-panel deep-orange lighten-2">Danger Message</div>
+    </div>
+    <!-- Success Message -->
+    <div class="container">
+      <div class="card-panel green lighten-2">Success Message</div>
+    </div>
+
     <div class="container">
       <h1 class="center-align">Tuduu</h1>
       <div class="row">
@@ -23,26 +32,46 @@
           <div class="card-panel hoverable">
             <h4 class="center-align">Login</h4>
             <div class="row">
-              <form action="" class="col s12">
+              <form action="home.html" class="col s12">
                 <div class="row">
                   <div class="input-field col s12">
                     <input id="input-email" type="email" />
                     <label for="input-email">Email</label>
+                    <span class="red-text text-darken-2"><b>Input Required!</b></span>
                   </div>
                   <div class="input-field col s12">
                     <input id="input-password" type="password" />
                     <label for="input-password">Password</label>
+                    <span class="red-text text-darken-2"><b>Input Required!</b></span>
                   </div>
                   <div class="input-field col s12">
                     <a href="forgot-password.html">Forgot password?</a>
                     <p>Don't have an account? <a href="register.html">Register here</a></p>
                   </div>
                 </div>
+
+                <!-- Loading component -->
+                <div class="center-align" style="margin-bottom: 0.5em">
+                  <div class="preloader-wrapper active">
+                    <div class="spinner-layer spinner-red-only">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="gap-patch">
+                        <div class="circle"></div>
+                      </div>
+                      <div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <button
                   class="btn waves-effect waves-light"
                   type="submit"
                   name="action"
-                  style="width: 100%;"
+                  style="width: 100%"
                 >
                   Login
                 </button>
